@@ -12,8 +12,8 @@ class DCMSReadView : DCMSView {
     this
       .pageHeader(
         MVCReadPageHeader.rootPath(rootPath))
-      .pageBody(MVCPageBodyViewComponent)
-      .pageFooter(MVCPageFooterViewComponent)
+      .pageBody(PageBodyViewComponent)
+      .pageFooter(PageFooterViewComponent)
       .rootPath(rootPath); 
   }
 
@@ -21,4 +21,4 @@ class DCMSReadView : DCMSView {
     super.beforeH5(options);
   }
 }
-mixin(MVCViewCalls!("CMSReadView", "DCMSReadView"));
+mixin(ViewCalls!("CMSReadView", "DCMSReadView"));

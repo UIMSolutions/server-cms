@@ -3,22 +3,22 @@ module servers.cms.views.view;
 @safe:
 import servers.cms;
 
-class DCMSView : DMVCView {
+class DCMSView : DView {
   mixin(MVCViewThis!("CMSView"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .pageHeader(MVCPageHeaderViewComponent.rootPath(rootPath))
-      .pageBody(MVCPageBodyViewComponent)
-      .pageFooter(MVCPageFooterViewComponent)      
+      .pageHeader(PageHeaderViewComponent.rootPath(rootPath))
+      .pageBody(PageBodyViewComponent)
+      .pageFooter(PageFooterViewComponent)      
       .rootPath("/cms");
   }
 
-  mixin(OProperty!("DMVCPageHeaderViewComponent", "pageHeader"));
-  mixin(OProperty!("DMVCPageBodyViewComponent", "pageBody"));
-  mixin(OProperty!("DMVCPageFooterViewComponent", "pageFooter"));
+  mixin(OProperty!("DPageHeaderViewComponent", "pageHeader"));
+  mixin(OProperty!("DPageBodyViewComponent", "pageBody"));
+  mixin(OProperty!("DPageFooterViewComponent", "pageFooter"));
 
   override void _afterSetEntity() {
     super._afterSetEntity;
@@ -58,4 +58,4 @@ class DCMSView : DMVCView {
       this.pageFooter.toH5;
   }
 }
-mixin(MVCViewCalls!("CMSView", "DCMSView"));
+mixin(ViewCalls!("CMSView", "DCMSView"));

@@ -21,4 +21,4 @@ class DCMSErrorView : DCMSView {
     ].toH5;
   }
 }
-mixin(MVCViewCalls!("CMSErrorView", "DCMSErrorView"));
+mixin(ViewCalls!("CMSErrorView", "DCMSErrorView"));

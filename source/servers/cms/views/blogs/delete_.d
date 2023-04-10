@@ -30,4 +30,4 @@ class DCMSBlogsDeleteView : DCMSDeleteView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSBlogsDeleteView", "DCMSBlogsDeleteView"));
+mixin(ViewCalls!("CMSBlogsDeleteView", "DCMSBlogsDeleteView"));

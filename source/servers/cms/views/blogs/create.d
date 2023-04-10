@@ -30,4 +30,4 @@ class DCMSBlogsCreateView : DCMSCreateView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSBlogsCreateView", "DCMSBlogsCreateView"));
+mixin(ViewCalls!("CMSBlogsCreateView", "DCMSBlogsCreateView"));

@@ -3,7 +3,7 @@ module servers.cms.layouts.general;
 @safe:
 import servers.cms;
 
-class DCMSGeneralLayout : DMVCLayout {
+class DCMSGeneralLayout : DLayout {
   this() { super(); }
 
   override void initialize() {

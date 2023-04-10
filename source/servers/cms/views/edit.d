@@ -12,8 +12,8 @@ class DCMSEditView : DCMSView {
     this
       .pageHeader(
         MVCEditPageHeader.rootPath(rootPath))
-      .pageBody(MVCPageBodyViewComponent)
-      .pageFooter(MVCPageFooterViewComponent); 
+      .pageBody(PageBodyViewComponent)
+      .pageFooter(PageFooterViewComponent); 
   }
 
   override void beforeH5(STRINGAA options = null) {
@@ -31,4 +31,4 @@ class DCMSEditView : DCMSView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSEditView", "DCMSEditView"));
+mixin(ViewCalls!("CMSEditView", "DCMSEditView"));

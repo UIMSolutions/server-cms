@@ -16,4 +16,4 @@ class DCMSIndexView : DCMSView {
         .title("CMS -> Index");
   }
 }
-mixin(MVCViewCalls!("CMSIndexView", "DCMSIndexView"));
+mixin(ViewCalls!("CMSIndexView", "DCMSIndexView"));

@@ -30,4 +30,4 @@ class DCMSCreateView : DCMSView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSCreateView", "DCMSCreateView"));
+mixin(ViewCalls!("CMSCreateView", "DCMSCreateView"));
