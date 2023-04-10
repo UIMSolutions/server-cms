@@ -1,0 +1,12 @@
+{
+  "server_name":"server-cms",  
+  "rootPath":"/",
+  "serverMode":"debug",  
+  "httpMode":"OnlyHttp",  
+	"httpPort":9011,
+  "httpAddresses": ["::1", "127.0.0.1"],
+	"httpsPort":9111,
+  "httpsAddresses": ["::1", "127.0.0.1"],
+  "tlsChain":"/etc/letsencrypt/live/ui-manufaktur.com/fullchain.pem",
+  "tlsPrivate":"/etc/letsencrypt/live/ui-manufaktur.com/privkey.pem"
+}
