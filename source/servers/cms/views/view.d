@@ -4,7 +4,7 @@ module servers.cms.views.view;
 import servers.cms;
 
 class DCMSView : DView {
-  mixin(MVCViewThis!("CMSView"));
+  mixin(ViewThis!("CMSView"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

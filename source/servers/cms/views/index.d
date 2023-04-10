@@ -4,7 +4,7 @@ module servers.cms.views.index;
 import servers.cms;
 
 class DCMSIndexView : DCMSView {
-  mixin(MVCViewThis!("CMSIndexView"));
+  mixin(ViewThis!("CMSIndexView"));
 
 
 

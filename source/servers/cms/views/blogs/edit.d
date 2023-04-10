@@ -4,7 +4,7 @@ module servers.cms.views.blogs.edit;
 import servers.cms;
 
 class DCMSBlogsEditView : DCMSEditView {
-  mixin(MVCViewThis!("CMSBlogsEditView"));
+  mixin(ViewThis!("CMSBlogsEditView"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

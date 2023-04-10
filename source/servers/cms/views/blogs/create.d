@@ -4,7 +4,7 @@ module servers.cms.views.blogs.create;
 import servers.cms;
 
 class DCMSBlogsCreateView : DCMSCreateView {
-  mixin(MVCViewThis!("CMSBlogsCreateView"));
+  mixin(ViewThis!("CMSBlogsCreateView"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

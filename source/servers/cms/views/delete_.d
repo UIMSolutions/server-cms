@@ -4,7 +4,7 @@ module servers.cms.views.delete_;
 import servers.cms;
 
 class DCMSDeleteView : DCMSView {
-  mixin(MVCViewThis!("CMSDeleteView"));
+  mixin(ViewThis!("CMSDeleteView"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

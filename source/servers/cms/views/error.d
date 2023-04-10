@@ -4,7 +4,7 @@ module servers.cms.views.error;
 import servers.cms;
 
 class DCMSErrorView : DCMSView {
-  mixin(MVCViewThis!("CMSErrorView"));
+  mixin(ViewThis!("CMSErrorView"));
 
 
 
