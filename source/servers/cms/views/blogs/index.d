@@ -30,4 +30,4 @@ class DCMSBlogsIndexView : DCMSIndexView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSBlogsIndexView", "DCMSBlogsIndexView"));
+mixin(ViewCalls!("CMSBlogsIndexView", "DCMSBlogsIndexView"));

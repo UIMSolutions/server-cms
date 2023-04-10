@@ -23,4 +23,4 @@ class DCMSNewsEditView : DCMSView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSNewsEditView", "DCMSNewsEditView"));
+mixin(ViewCalls!("CMSNewsEditView", "DCMSNewsEditView"));

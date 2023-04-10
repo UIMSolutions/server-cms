@@ -31,4 +31,4 @@ class DCMSBlogsReadView : DCMSReadView {
     super.beforeH5(options);
   }
 }
-mixin(MVCViewCalls!("CMSBlogsReadView", "DCMSBlogsReadView"));
+mixin(ViewCalls!("CMSBlogsReadView", "DCMSBlogsReadView"));

@@ -23,4 +23,4 @@ class DCMSThemesDeleteView : DCMSView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSThemesDeleteView", "DCMSThemesDeleteView"));
+mixin(ViewCalls!("CMSThemesDeleteView", "DCMSThemesDeleteView"));

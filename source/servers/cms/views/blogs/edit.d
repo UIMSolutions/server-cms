@@ -31,4 +31,4 @@ class DCMSBlogsEditView : DCMSEditView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSBlogsEditView", "DCMSBlogsEditView"));
+mixin(ViewCalls!("CMSBlogsEditView", "DCMSBlogsEditView"));

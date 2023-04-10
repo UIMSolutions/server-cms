@@ -23,4 +23,4 @@ class DCMSNewsDeleteView : DCMSView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSNewsDeleteView", "DCMSNewsDeleteView"));
+mixin(ViewCalls!("CMSNewsDeleteView", "DCMSNewsDeleteView"));

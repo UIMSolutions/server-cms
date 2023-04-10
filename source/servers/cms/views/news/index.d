@@ -22,4 +22,4 @@ class DCMSNewsIndexView : DCMSView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSNewsIndexView", "DCMSNewsIndexView"));
+mixin(ViewCalls!("CMSNewsIndexView", "DCMSNewsIndexView"));

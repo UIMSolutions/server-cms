@@ -23,4 +23,4 @@ class DCMSThemesCreateView : DCMSView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSThemesCreateView", "DCMSThemesCreateView"));
+mixin(ViewCalls!("CMSThemesCreateView", "DCMSThemesCreateView"));
