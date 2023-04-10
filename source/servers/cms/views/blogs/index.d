@@ -4,7 +4,7 @@ module servers.cms.views.blogs.index;
 import servers.cms;
 
 class DCMSBlogsIndexView : DCMSIndexView {
-  mixin(MVCViewThis!("CMSBlogsIndexView"));
+  mixin(ViewThis!("CMSBlogsIndexView"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);

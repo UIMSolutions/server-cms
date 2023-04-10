@@ -4,7 +4,7 @@ module servers.cms.views.themes.edit;
 import servers.cms;
 
 class DCMSThemesEditView : DCMSView {
-  mixin(MVCViewThis!("CMSThemesEditView"));
+  mixin(ViewThis!("CMSThemesEditView"));
 
 
 
@@ -23,4 +23,4 @@ class DCMSThemesEditView : DCMSView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSThemesEditView", "DCMSThemesEditView"));
+mixin(ViewCalls!("CMSThemesEditView", "DCMSThemesEditView"));

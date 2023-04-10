@@ -4,7 +4,7 @@ module servers.cms.views.news.delete_;
 import servers.cms;
 
 class DCMSNewsDeleteView : DCMSView {
-  mixin(MVCViewThis!("CMSNewsDeleteView"));
+  mixin(ViewThis!("CMSNewsDeleteView"));
 
 
 

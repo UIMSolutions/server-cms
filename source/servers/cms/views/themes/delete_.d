@@ -4,7 +4,7 @@ module servers.cms.views.themes.delete_;
 import servers.cms;
 
 class DCMSThemesDeleteView : DCMSView {
-  mixin(MVCViewThis!("CMSThemesDeleteView"));
+  mixin(ViewThis!("CMSThemesDeleteView"));
 
 
 

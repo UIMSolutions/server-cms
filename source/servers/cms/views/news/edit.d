@@ -4,7 +4,7 @@ module servers.cms.views.news.edit;
 import servers.cms;
 
 class DCMSNewsEditView : DCMSView {
-  mixin(MVCViewThis!("CMSNewsEditView"));
+  mixin(ViewThis!("CMSNewsEditView"));
 
 
 

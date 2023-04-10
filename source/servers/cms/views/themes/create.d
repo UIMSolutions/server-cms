@@ -4,7 +4,7 @@ module servers.cms.views.themes.create;
 import servers.cms;
 
 class DCMSThemesCreateView : DCMSView {
-  mixin(MVCViewThis!("CMSThemesCreateView"));
+  mixin(ViewThis!("CMSThemesCreateView"));
 
 
 

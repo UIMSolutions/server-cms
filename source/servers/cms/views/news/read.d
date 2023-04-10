@@ -4,7 +4,7 @@ module servers.cms.views.news.read;
 import servers.cms;
 
 class DCMSNewsReadView : DCMSView {
-  mixin(MVCViewThis!("CMSNewsReadView"));
+  mixin(ViewThis!("CMSNewsReadView"));
 
 
 
