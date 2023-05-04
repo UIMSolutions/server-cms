@@ -12,7 +12,7 @@ class DCMSBlogsReadView : DCMSReadView {
     this
       .pageHeader(
         MVCReadPageHeader.rootPath(rootPath))
-      .pageBody(MVCPageBodyViewComponent)
+      .pageBody(PageBodyViewComponent)
       .pageFooter(MVCPageFooterViewComponent); 
 
     this

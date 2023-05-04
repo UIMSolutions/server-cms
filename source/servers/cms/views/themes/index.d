@@ -4,7 +4,7 @@ module servers.cms.views.themes.index;
 import servers.cms;
 
 class DCMSThemesIndexView : DCMSView {
-  mixin(MVCViewThis!("CMSThemesIndexView"));
+  mixin(ViewThis!("CMSThemesIndexView"));
 
 
 
@@ -22,4 +22,4 @@ class DCMSThemesIndexView : DCMSView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSThemesIndexView", "DCMSThemesIndexView"));
+mixin(ViewCalls!("CMSThemesIndexView", "DCMSThemesIndexView"));

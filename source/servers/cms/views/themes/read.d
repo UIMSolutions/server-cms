@@ -4,7 +4,7 @@ module servers.cms.views.themes.read;
 import servers.cms;
 
 class DCMSThemesReadView : DCMSView {
-  mixin(MVCViewThis!("CMSThemesReadView"));
+  mixin(ViewThis!("CMSThemesReadView"));
 
 
 
@@ -23,4 +23,4 @@ class DCMSThemesReadView : DCMSView {
           );
   }
 }
-mixin(MVCViewCalls!("CMSThemesReadView", "DCMSThemesReadView"));
+mixin(ViewCalls!("CMSThemesReadView", "DCMSThemesReadView"));

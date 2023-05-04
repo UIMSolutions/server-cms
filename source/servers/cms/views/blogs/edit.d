@@ -12,7 +12,7 @@ class DCMSBlogsEditView : DCMSEditView {
     this
       .pageHeader(
         MVCEditPageHeader.rootPath(rootPath))
-      .pageBody(MVCPageBodyViewComponent)
+      .pageBody(PageBodyViewComponent)
       .pageFooter(MVCPageFooterViewComponent); 
   }
 

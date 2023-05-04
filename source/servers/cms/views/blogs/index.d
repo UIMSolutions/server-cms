@@ -12,7 +12,7 @@ class DCMSBlogsIndexView : DCMSIndexView {
     this
       .pageHeader(
         MVCIndexPageHeader.rootPath(rootPath))
-      .pageBody(MVCPageBodyViewComponent)
+      .pageBody(PageBodyViewComponent)
       .pageFooter(MVCPageFooterViewComponent);  
   }
 

@@ -1,38 +1,39 @@
 {
+	"name": "server-cms",
+	"description": "Server for management CMS",
 	"authors": [
-		"UI Manufaktur UG",
-		"Ozan Nurettin Süel",
-		"Sicherheitsschmiede"
+		"Sicherheitsschmiede",
+		"Ozan Nurettin Süel"
 	],
-	"copyright": "Copyright © 2017-2022 UI Manufaktur UG / Ozan Nurettin Süel (Sicherheitsschmiede)",
+	"copyright": "Copyright © 2015-2023, Ozan Nurettin Süel",	
+	"license": "Apache-2.0",
 		"dependencies": {
 			"arsd-official": "~>10.2.2",
-			"colored": "~>0.0.27",
+			"colored": "~>0.0.31",
 			"dini": "~>2.0.0",
 			"dyaml": "~>0.8.3",
-			"vibe-d": "~>0.9.5",
+			"vibe-d": "~>0.9.6",
 			"vibe-d:tls":"*"
 		},
-		"license": "Apache-2.0",
-		"name": "server-cms",
-		"description": "Server for management CMS",
 		"importPaths": [
 			"../../LIBS/uim-core",
 			"../../LIBS/uim-oop",
 			"../../LIBS/uim-css",
-			"../../LIBS/uim-javascript",
 			"../../LIBS/uim-json",
 			"../../LIBS/uim-html",
 			"../../LIBS/uim-bootstrap",
 			"../../LIBS/uim-apps",
 			"../../LIBS/uim-servers",
+			"../../LIBS/uim-cms",
 
 			"../../LIBS/uim-controls",
 			"../../LIBS/uim-jsonbase",
 			"../../LIBS/uim-entitybase",
 			"../../LIBS/uim-mvc",
-
 			"../../LIBS/uim-models",
+
+			"../../LANGS/lang-javascript",
+
 			"../../MODELS/model-systems",
 			"../../MODELS/model-cms",
 
@@ -43,7 +44,6 @@
 			"../../LIBS/uim-core",
 			"../../LIBS/uim-oop",
 			"../../LIBS/uim-css",
-			"../../LIBS/uim-javascript",
 			"../../LIBS/uim-json",
 			"../../LIBS/uim-html",
 			"../../LIBS/uim-bootstrap",
@@ -53,10 +53,14 @@
 			"../../LIBS/uim-jsonbase",
 			"../../LIBS/uim-entitybase",
 			"../../LIBS/uim-mvc",
+			"../../LIBS/uim-cms",
 
 			"../../LIBS/uim-models",
+
 			"../../MODELS/model-systems",
 			"../../MODELS/model-cms",
+
+			"../../LANGS/lang-javascript",
 
 			"../../LAYOUTS/layout-tabler/source/layouts",
 			"./"
