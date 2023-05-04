@@ -3,12 +3,15 @@ module servers.cms.layouts.general;
 @safe:
 import servers.cms;
 
+string brandName = "Sicherheitsschmiede";
+string brandLogo = "/img/headerlogo.png";
+
 class DCMSGeneralLayout : DLayout {
   this() { super(); }
 
-  override void initialize() {
+  override void initialize(Json configSettings = Json(null)) {
     debug writeln("Initialize 'CMSGeneralLayout'"); 
-    super.initialize;
+    super.initialize(configSettings);
  
     // Default settings
     this
@@ -433,7 +436,7 @@ class DCMSGeneralLayout : DLayout {
           ),
           H5H1(["navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3"], 
             H5A(["href":"."], 
-              H5Img(["navbar-brand-image"], ["src":"./static/logo.svg", "width":"110", "height":"32", "alt":"Tabler"])
+              H5Img(["navbar-brand-image"], ["src":brandLogo, "width":"110", "height":"32", "alt":brandName])
             )
           ),
           UIMNavbarNav(["flex-row order-md-last"], 
@@ -576,7 +579,7 @@ class DCMSGeneralLayout : DLayout {
   mixin(OProperty!("DH5Obj", "CMSSecondNavbar"));
   mixin(OProperty!("DH5Obj", "CMSMainNavbar"));
 
-	override string render(DPageController controller, string content, STRINGAA options = null) { 
+	override string render(IPageController controller, string content, STRINGAA options = null) { 
 		debugMethodCall(moduleName!DCMSGeneralLayout~":DCMSGeneralLayout("~this.name~")::render(DPageController controller, string content, STRINGAA options = null)");
 		super.render(controller, content, options);
 

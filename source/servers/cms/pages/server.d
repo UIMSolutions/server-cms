@@ -6,7 +6,7 @@ import servers.cms;
 void uimServer(HTTPServerRequest req, HTTPServerResponse res) {
   debugMethodCall(moduleName!uimServer~":uimServer");
 
-  APPPageController(thisServer).request(req, res);
+  PageController(thisServer).request(req, res);
 }
 
 /* static this() {

@@ -14,27 +14,21 @@ class DCMSBlogsCreatePageController : DPageController {
       .rootPath("/cms/blogs") 
       .collectionName("cms_blogs");     
 
-    if (auto vw = cast(DCMSBlogsEditView)this.view) {
-      if (auto form = cast(DForm)vw.form) {
+    if (auto myView = cast(DCMSBlogsEditView)this.view) {
+      /* if (auto myForm = cast(DForm)myView.form) {
         this
           .scripts
             .addContents(
               editorSummary~
               editorText,
         `window.addEventListener('load', (event) => {
-          document.getElementById("`~form.id~`").addEventListener("submit", event => {
+          document.getElementById("`~myForm.id~`").addEventListener("submit", event => {
             editorSummary.save();
             editorText.save();
           })
         });`);
-      }
+      } */
     }
   }
-
-  override void beforeResponse(STRINGAA options = null) {
-    debugMethodCall(moduleName!DCMSBlogsCreatePageController~":DCMSBlogsCreatePageController::beforeResponse");
-    super.beforeResponse(options);
-    if (hasError || hasRedirect) { return; }        
-  } 
 }
 mixin(ControllerCalls!("CMSBlogsCreatePageController", "DCMSBlogsCreatePageController"));

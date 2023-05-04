@@ -11,7 +11,7 @@ class DCMSDeleteView : DCMSView {
 
     this
       .pageHeader(MVCDeletePageHeader.rootPath(rootPath))
-      .pageBody(MVCPageBodyViewComponent)
+      .pageBody(PageBodyViewComponent)
       .pageFooter(MVCPageFooterViewComponent);  
   }
 

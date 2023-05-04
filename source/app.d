@@ -11,9 +11,7 @@ void main(string[] args) {
 	debug writeln("SetRouterDefault!()");
   mixin(SetRouterDefault!());
 
-  thisApplication
-		.rootPath("/cms/")
-		.register(router);
+  router.register(thisServer);
 
   mixin(SetHTTP!());
 	runApplication();

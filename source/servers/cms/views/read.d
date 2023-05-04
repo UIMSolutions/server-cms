@@ -13,7 +13,7 @@ class DCMSReadView : DCMSView {
       .pageHeader(
         MVCReadPageHeader.rootPath(rootPath))
       .pageBody(PageBodyViewComponent)
-      .pageFooter(PageFooterViewComponent)
+      .pageFooter(MVCPageFooterViewComponent)
       .rootPath(rootPath); 
   }
 

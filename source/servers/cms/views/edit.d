@@ -13,7 +13,7 @@ class DCMSEditView : DCMSView {
       .pageHeader(
         MVCEditPageHeader.rootPath(rootPath))
       .pageBody(PageBodyViewComponent)
-      .pageFooter(PageFooterViewComponent); 
+      .pageFooter(MVCPageFooterViewComponent); 
   }
 
   override void beforeH5(STRINGAA options = null) {

@@ -11,7 +11,7 @@ class DCMSCreateView : DCMSView {
 
     this
       .pageHeader(MVCCreatePageHeader.rootPath(rootPath))
-      .pageBody(MVCPageBodyViewComponent)
+      .pageBody(PageBodyViewComponent)
       .pageFooter(MVCPageFooterViewComponent);  
   }
 

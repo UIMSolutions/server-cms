@@ -12,13 +12,13 @@ class DCMSView : DView {
     this
       .pageHeader(PageHeaderViewComponent.rootPath(rootPath))
       .pageBody(PageBodyViewComponent)
-      .pageFooter(PageFooterViewComponent)      
+      .pageFooter(MVCPageFooterViewComponent)      
       .rootPath("/cms");
   }
 
   mixin(OProperty!("DPageHeaderViewComponent", "pageHeader"));
   mixin(OProperty!("DPageBodyViewComponent", "pageBody"));
-  mixin(OProperty!("DPageFooterViewComponent", "pageFooter"));
+  mixin(OProperty!("DMVCPageFooterViewComponent", "pageFooter"));
 
   override void _afterSetEntity() {
     super._afterSetEntity;

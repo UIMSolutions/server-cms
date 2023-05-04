@@ -6,8 +6,6 @@ import servers.cms;
 class DCMSIndexView : DCMSView {
   mixin(ViewThis!("CMSIndexView"));
 
-
-
   override void beforeH5(STRINGAA options = null) {
     super.beforeH5(options);
 
