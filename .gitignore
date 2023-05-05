@@ -7,3 +7,6 @@ server-cms _Kopie
 server-cms_copy
 server-cms2
 server-cms2501
+.dub/build/application-debug-linux.posix-x86_64-dmd_v2.100.0-6A6310B3D3EE103DD496820016068B7B/server-cms.o
+.dub/build/application-debug-linux.posix-x86_64-dmd_v2.100.0-E8CDCDFADB3242077A91F89E2510C998/server-cms.o
+.dub/code/server-cms-test-application-unittest-linux.posix-x86_64-dmd_v2.100.0-658CF415E9DC70FDB6073C08857D0437_dub_test_root.d
