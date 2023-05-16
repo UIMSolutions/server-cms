@@ -11,6 +11,10 @@ void main(string[] args) {
 	debug writeln("SetRouterDefault!()");
   mixin(SetRouterDefault!());
 
+	thisServer
+		
+		.registerApps(cmsApp);
+		
   router.register(thisServer);
 
   mixin(SetHTTP!());

@@ -1,7 +1,6 @@
 module servers.cms;
 
-@safe:
-mixin ImportPhobos;
+mixin(ImportPhobos!());
 mixin ImportDubs;
 mixin ImportUim;
 
@@ -19,10 +18,11 @@ public import uim.cms;
 // cms library
 /* public import uim.cms; */
 
+public import apps.cms;
+
 // server-cms packages
 public import servers.cms.controllers;
 public import servers.cms.layouts;
-public import servers.cms.views;
 
 // Required models
 public import models.systems;
@@ -32,6 +32,7 @@ public import layouts.tabler;
 
 // mixin(ImportLocal!("cms"));
 
+@safe:
 string[size_t] errorMessages;
 static this() {
 /*   thisServer = APPApplication
@@ -46,6 +47,7 @@ static this() {
     .rootPath("*")
     .layout(CMSGeneralLayout)
     .addRoute(Route("/", HTTPMethod.GET, CMSIndexPageController))
+    .addRoute(Route("/cms*", HTTPMethod.GET, CMSIndexPageController))
     .addRoute(Route("/login", HTTPMethod.GET, LoginPageController))
     .addRoute(Route("/login2", HTTPMethod.GET, Login2PageController))
     .addRoute(Route("/logout", HTTPMethod.GET, LogoutPageController))
