@@ -19,7 +19,6 @@
 			"../../LIBS/uim-core",
 			"../../LIBS/uim-oop",
 			"../../LIBS/uim-css",
-			"../../LIBS/uim-json",
 			"../../LIBS/uim-html",
 			"../../LIBS/uim-bootstrap",
 			"../../LIBS/uim-apps",
@@ -36,6 +35,8 @@
 
 			"../../MODELS/model-systems",
 			"../../MODELS/model-cms",
+
+			"../../APPS/app-cms",
 
 			"../../LAYOUTS/layout-tabler/source/layouts",
 			"./"
@@ -44,7 +45,6 @@
 			"../../LIBS/uim-core",
 			"../../LIBS/uim-oop",
 			"../../LIBS/uim-css",
-			"../../LIBS/uim-json",
 			"../../LIBS/uim-html",
 			"../../LIBS/uim-bootstrap",
 			"../../LIBS/uim-apps",
@@ -54,13 +54,14 @@
 			"../../LIBS/uim-entitybase",
 			"../../LIBS/uim-mvc",
 			"../../LIBS/uim-cms",
-
 			"../../LIBS/uim-models",
 
 			"../../MODELS/model-systems",
 			"../../MODELS/model-cms",
 
 			"../../LANGS/lang-javascript",
+
+			"../../APPS/app-cms",
 
 			"../../LAYOUTS/layout-tabler/source/layouts",
 			"./"
