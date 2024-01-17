@@ -9,16 +9,13 @@
 	"license": "Apache-2.0",
 		"dependencies": {
 			"arsd-official": "~>10.2.2",
-			"colored": "~>0.0.31",
 			"dini": "~>2.0.0",
 			"dyaml": "~>0.8.3",
-			"vibe-d": "~>0.9.6",
-			"vibe-d:tls":"*"
-		},
+			"colored": "~>0.0.31",
+			"vibe-d": "~>0.9.7",
+			"uim": "~>24.1.1"
+			},
 		"importPaths": [
-			"../../LIBS/uim-core",
-			"../../LIBS/uim-oop",
-			"../../LIBS/uim-css",
 			"../../LIBS/uim-html",
 			"../../LIBS/uim-bootstrap",
 			"../../LIBS/uim-apps",
@@ -42,9 +39,6 @@
 			"./"
 		],
 		"sourcePaths": [
-			"../../LIBS/uim-core",
-			"../../LIBS/uim-oop",
-			"../../LIBS/uim-css",
 			"../../LIBS/uim-html",
 			"../../LIBS/uim-bootstrap",
 			"../../LIBS/uim-apps",
